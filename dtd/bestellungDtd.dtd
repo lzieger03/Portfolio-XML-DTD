@@ -1,0 +1,36 @@
+<!-- erstellen einer orderReview -->
+<!ELEMENT orderOverview (order*)>
+
+<!ELEMENT order (customer, address, pizza+)>
+<!ATTLIST order orderID ID #REQUIRED>
+
+<!ELEMENT customer (student*)>
+<!ATTLIST customer 
+    name CDATA #REQUIRED
+    surname CDATA #REQUIRED
+    isStudent CDATA #REQUIRED>
+<!ELEMENT student (#PCDATA)>
+<!ATTLIST student 
+matrikelNo CDATA #REQUIRED
+placeOfStudy CDATA #REQUIRED>
+
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST adress
+    street CDATA #REQUIRED
+    houseNo CDATA #REQUIRED
+    postCode CDATA #REQUIRED
+    city CDATA #REQUIRED>
+
+<!ELEMENT pizza (topping+, extraRequests*)>
+<!ATTLIST pizza 
+    size CDATA #REQUIRED>
+
+<!ELEMENT topping (salami*, ham*, cheese*, mushrooms*)>
+<!ELEMENT salami (#PCDATA)>
+<!ATTLIST salami 
+    spicy CDATA #REQUIRED>
+<!ELEMENT ham (#PCDATA)>
+<!ELEMENT cheese (#PCDATA)>
+<!ELEMENT mushroom (#PCDATA)>
+
+<!ELEMENT extraRequests (#PCDATA)>
