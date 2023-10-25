@@ -1,36 +1,47 @@
 <!-- erstellen einer orderReview -->
 <!ELEMENT orderOverview (order*)>
+<!ATTLIST orderOverview 
+    title CDATA #REQUIRED>
 
+<!-- order -->
 <!ELEMENT order (customer, address, pizza+)>
-<!ATTLIST order orderID ID #REQUIRED>
+<!ATTLIST order 
+    orderID CDATA #REQUIRED
+    timeStamp CDATA #REQUIRED>
 
-<!ELEMENT customer (student*)>
+<!-- customer -->
+<!ELEMENT customer (student?)>
 <!ATTLIST customer 
     name CDATA #REQUIRED
-    surname CDATA #REQUIRED
-    isStudent CDATA #REQUIRED>
-<!ELEMENT student (#PCDATA)>
-<!ATTLIST student 
-matrikelNo CDATA #REQUIRED
-placeOfStudy CDATA #REQUIRED>
+    surname CDATA #REQUIRED>
+<!-- customer: student -->
+<!ELEMENT student (matrikelNo, placeOfStudy)>
+<!ELEMENT matrikelNo (#PCDATA)>
+<!ELEMENT placeOfStudy (#PCDATA)>
+<!ATTLIST placeOfStudy 
+    country CDATA #REQUIRED>
 
-<!ELEMENT address (#PCDATA)>
-<!ATTLIST adress
-    street CDATA #REQUIRED
-    houseNo CDATA #REQUIRED
-    postCode CDATA #REQUIRED
-    city CDATA #REQUIRED>
+<!-- address -->
+<!ELEMENT address (street, houseNo, postalCode, city)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT houseNo (#PCDATA)>
+<!ELEMENT postalCode (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
 
+<!-- pizza -->
 <!ELEMENT pizza (topping+, extraRequests*)>
 <!ATTLIST pizza 
+    pizzaID CDATA #REQUIRED
     size CDATA #REQUIRED>
 
+<!-- pizza: topping -->
 <!ELEMENT topping (salami*, ham*, cheese*, mushrooms*)>
 <!ELEMENT salami (#PCDATA)>
 <!ATTLIST salami 
     spicy CDATA #REQUIRED>
 <!ELEMENT ham (#PCDATA)>
 <!ELEMENT cheese (#PCDATA)>
-<!ELEMENT mushroom (#PCDATA)>
+<!ELEMENT mushrooms (#PCDATA)>
 
+<!-- pizza: extraRequests -->
 <!ELEMENT extraRequests (#PCDATA)>
