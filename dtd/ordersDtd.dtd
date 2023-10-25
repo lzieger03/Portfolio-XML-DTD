@@ -13,7 +13,8 @@
 <!ELEMENT customer (student?)>
 <!ATTLIST customer 
     name CDATA #REQUIRED
-    surname CDATA #REQUIRED>
+    surname CDATA #REQUIRED
+    isStudent CDATA #REQUIRED>
 <!-- customer: student -->
 <!ELEMENT student (matrikelNo, placeOfStudy)>
 <!ELEMENT matrikelNo (#PCDATA)>

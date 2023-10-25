@@ -2,8 +2,8 @@
 <!DOCTYPE orderOverview SYSTEM "../dtd/ordersDtd.dtd">
 
 <orderOverview title="All the orders">
-    <order orderID="1" timeStamp="2023-10-16 04:10:36">
-        <customer name="Hermann" surname="Studymann">
+    <order orderID="1" timeStamp="2023-10-25 14:10:36">
+        <customer name="Hermann" surname="Studymann" isStudent="yes">
             <student>
                 <matrikelNo>41234567890</matrikelNo>
                 <placeOfStudy country="germany">Karlsruhe</placeOfStudy>
