@@ -6,7 +6,7 @@
 <!-- order -->
 <!ELEMENT order (customer, address, pizza+)>
 <!ATTLIST order 
-    orderID CDATA #REQUIRED
+    orderID ID #REQUIRED
     timeStamp CDATA #REQUIRED>
 
 <!-- customer -->
@@ -33,7 +33,7 @@
 <!-- pizza -->
 <!ELEMENT pizza (topping+, extraRequests*)>
 <!ATTLIST pizza 
-    pizzaID CDATA #REQUIRED
+    pizzaID ID #REQUIRED
     size CDATA #REQUIRED>
 
 <!-- pizza: topping -->

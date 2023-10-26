@@ -2,7 +2,7 @@
 <!DOCTYPE orderOverview SYSTEM "../dtd/ordersDtd.dtd">
 
 <orderOverview title="All the orders">
-    <order orderID="2" timeStamp="2023-10-26 12:07:32">
+    <order orderID="OR002" timeStamp="2023-10-26 12:07:32">
         <customer name="Claudia" surname="Nonstudent" isStudent="no">
         </customer>
         <address>
@@ -11,7 +11,7 @@
             <postalCode>32145</postalCode>
             <city>Ausdenkhausen</city>
         </address>
-        <pizza pizzaID="01" size="30cm">
+        <pizza pizzaID="PZ001" size="30cm">
             <topping>
                 <salami spicy="yes"></salami>
                 <ham></ham>
