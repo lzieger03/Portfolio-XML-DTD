@@ -14,9 +14,9 @@
         <pizza pizzaID="PZ001" size="30cm">
             <topping>
                 <salami spicy="yes"></salami>
-                <ham></ham>
-                <cheese></cheese>
-                <mushrooms></mushrooms>
+                <ham>Schinken</ham>
+                <cheese>Käse</cheese>
+                <mushrooms>Pilze</mushrooms>
             </topping>
             <extraRequests>Könnte ich bitte noch Oliven haben, aber nur die grünen</extraRequests>
         </pizza>

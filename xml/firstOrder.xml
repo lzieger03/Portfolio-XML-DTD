@@ -17,25 +17,25 @@
         </address>
         <pizza pizzaID="PZ001" size="30cm">
             <topping>
-                <salami spicy="yes"></salami>
-                <ham></ham>
-                <cheese></cheese>
+                <salami spicy="yes">Salami</salami>
+                <ham>Schinken</ham>
+                <cheese>Käse</cheese>
             </topping>
             <extraRequests>Bitte extra scharf</extraRequests>
         </pizza>
         <pizza pizzaID="PZ002" size="28cm">
             <topping>
                 <salami spicy="no"></salami>
-                <cheese></cheese>
-                <mushrooms></mushrooms>
+                <cheese>Käse</cheese>
+                <mushrooms>Pilze</mushrooms>
             </topping>
             <extraRequests>Bitte keine Soße</extraRequests>
         </pizza>
         <pizza pizzaID="PZ003" size="46cm">
             <topping>
-                <cheese></cheese>
-                <mushrooms></mushrooms>
-                <mushrooms></mushrooms>
+                <cheese>Käse</cheese>
+                <mushrooms>Pilze</mushrooms>
+                <mushrooms>Pilze</mushrooms>
             </topping>
             <extraRequests>Bitte extra viele Pilze</extraRequests>
         </pizza>
