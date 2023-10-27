@@ -35,6 +35,7 @@
             <topping>
                 <cheese></cheese>
                 <mushrooms></mushrooms>
+                <mushrooms></mushrooms>
             </topping>
             <extraRequests>Bitte extra viele Pilze</extraRequests>
         </pizza>

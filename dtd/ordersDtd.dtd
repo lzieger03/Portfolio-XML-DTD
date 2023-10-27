@@ -31,19 +31,24 @@
 <!ELEMENT city (#PCDATA)>
 
 <!-- pizza -->
-<!ELEMENT pizza (topping+, extraRequests*)>
+<!ELEMENT pizza (topping, extraRequests*)>
 <!ATTLIST pizza 
     pizzaID ID #REQUIRED
-    size CDATA #REQUIRED>
+    size CDATA #REQUIRED
+    isVegi CDATA #IMPLIED>
 
 <!-- pizza: topping -->
-<!ELEMENT topping (salami*, ham*, cheese*, mushrooms*)>
+<!ELEMENT topping (salami | ham | cheese | mushrooms | olives | broccoli | nduja | arugola)*>
 <!ELEMENT salami (#PCDATA)>
 <!ATTLIST salami 
     spicy CDATA #REQUIRED>
 <!ELEMENT ham (#PCDATA)>
 <!ELEMENT cheese (#PCDATA)>
 <!ELEMENT mushrooms (#PCDATA)>
+<!ELEMENT olives (#PCDATA)>
+<!ELEMENT broccoli (#PCDATA)>
+<!ELEMENT nduja (#PCDATA)>
+<!ELEMENT arugola (#PCDATA)>
 
 <!-- pizza: extraRequests -->
 <!ELEMENT extraRequests (#PCDATA)>
